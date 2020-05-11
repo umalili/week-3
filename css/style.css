@@ -82,7 +82,7 @@ img {
 }
 
 .banner{
-	background-image:url("./img/68.png");
+	background-image:url("../img/68.png");
 	height: 840px;
 	background-size: cover;
 	background-position: center center;
@@ -155,7 +155,7 @@ img {
 	}
 
 	.banner{
-		background-image: url("./img/375.png");
+		background-image: url("../img/375.png");
 		height: 394px;
 	}
 
