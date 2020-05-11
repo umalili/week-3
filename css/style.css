@@ -1,0 +1,215 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+  
+body {
+	font-family: "微軟正黑體", serif;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+  
+.header {
+	padding: 30px 88px;
+	background-color: #aa0601;
+	display: flex;
+	justify-content: space-between;
+}
+  
+.menuBtn {
+	display: none;
+	color: #FFFFFF;
+}
+
+.menu {
+	display: flex;
+	width: 512px;
+	justify-content: space-between;
+}
+  
+.menu li a {
+	color: white;
+	font-size: 20px;
+	line-height: 1.5;
+	text-decoration: none;
+}
+
+.banner{
+	background-image:url("/img/68.png");
+	height: 840px;
+	background-size: cover;
+	background-position: center center;
+}
+.container{
+	max-width: 1224px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0 12px;
+}
+
+.banner-title{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+}
+
+.slogan{
+	font-size: 64px;
+	text-align: right;
+	color: #650300;
+	font-weight: bold;
+}
+
+.slogan-sm{
+	font-size: 36px;
+	line-height:45px;
+}
+
+@media(max-width:768px){
+
+	.header{
+		padding: 30px 48px;
+	}
+
+	.menu{
+		max-width: 440px;
+	}
+
+	.menuBtn{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		left: 13px;
+		width: 24px;
+	}
+
+	.container{
+		max-width: 696px;
+	}
+
+	.slogan{
+		font-size: 48px;
+	}
+	.slogan-sm{
+		font-size: 20px;
+	}
+}
+
+@media(max-width:375px){
+
+	.header {
+		position: relative;
+		justify-content: center;
+		padding: 10px 0;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.banner{
+		background-image: url("/img/375.png");
+		height: 394px;
+	}
+
+	.header h1 img {
+		width: 48px;
+		height: 30px;
+	}
+
+	/*menu下拉選單做法*/
+
+	.menuBtn {
+		position: absolute;
+		left: 13px;
+	}
+	
+	.menu {
+		max-height: 0px;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		position: absolute;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		transition: all 0.8s;
+		z-index: 120;
+		overflow: hidden;
+	}
+	
+	.menu.active {
+		max-height: 252px;
+	}
+	
+	.menu li a {
+		display: block;
+		background: #aa0601;
+		color: #ffffff;
+		border-top: 1px solid #ffffff;
+		padding: 16px 0;
+		z-index: 120;
+	}
+	
+	.menu li a:hover {
+		background: #8f0400;
+	}
+
+	.slogan{
+		font-size: 32px;
+		line-height: 45px;
+	}
+	.slogan-sm{
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+}	
