@@ -72,6 +72,7 @@ img {
 	display: flex;
 	width: 512px;
 	justify-content: space-between;
+	align-items: center;
 }
   
 .menu li a {
@@ -81,12 +82,18 @@ img {
 	text-decoration: none;
 }
 
+.menu a:hover{
+	text-decoration: underline;
+	text-decoration-color: #fff;
+}
+
 .banner{
 	background-image:url("../img/68.png");
 	height: 840px;
 	background-size: cover;
 	background-position: center center;
 }
+
 .container{
 	max-width: 1224px;
 	margin: 0 auto;
@@ -113,6 +120,47 @@ img {
 	line-height:45px;
 }
 
+.phisolophy{
+	background: #AA06010D;
+	padding: 64px 0;
+}
+
+.phisolophy ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+.phisolophy li{
+	margin-right: 24px;
+}
+
+.phisolophy img{
+	margin-bottom: 40px;
+	height: 100px;
+}
+
+.title{
+	font-size: 48px;
+	font-weight: bold;
+	color: #650300;
+	text-align: center;
+	margin-bottom: 64px;
+}
+
+h4{
+	font-size: 24px;
+	font-weight: 600;
+	color: #650300;
+	text-align: center;
+	margin-bottom: 4px;
+}
+
+p{
+	font-size: 16px;
+	padding: 10px 18px;
+	line-height: 1.5;
+}
+
 @media(max-width:768px){
 
 	.header{
@@ -123,14 +171,6 @@ img {
 		max-width: 440px;
 	}
 
-	.menuBtn{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: absolute;
-		left: 13px;
-		width: 24px;
-	}
 
 	.container{
 		max-width: 696px;
@@ -169,6 +209,12 @@ img {
 	.menuBtn {
 		position: absolute;
 		left: 13px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		width: 24px;
+
 	}
 	
 	.menu {
