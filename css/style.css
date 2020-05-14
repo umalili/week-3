@@ -248,8 +248,8 @@ p{
 	.menu li a {
 		display: block;
 		background: #aa0601;
-		color: #ffffff;
-		border-top: 1px solid #ffffff;
+		color: #fff;
+		border-top: 1px solid #fff;
 		padding: 16px 0;
 		z-index: 120;
 	}
