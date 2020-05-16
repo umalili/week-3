@@ -47,7 +47,7 @@ table {
 }
   
 html, body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
 }
 
 img {
@@ -183,9 +183,10 @@ p{
 	justify-content: center;
 	align-items: center;
 	font-size: 48px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
 	font-style: italic;
 	color: #aa0601;
-	font-weight: 900;
 	margin-right: 24px;
 }
 
@@ -233,6 +234,27 @@ p{
 	.list-wrap{
 		width: 46.4%;
 		padding: 20px 2%;
+	}
+
+	.classic{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.title-wrap{
+		margin-left: 35px;
+		font-size: 28px;
+	}
+
+	.classic-icon{
+		width: 32px;
+	}
+
+	.sunglasses-reverse{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
 	}
 }
 
@@ -313,10 +335,6 @@ p{
 	}
 
 	.philosophy ul{
-		margin-bottom: 64px;
-	}
-
-	.philosophy ul{
 		justify-content: center;
 	}
 
@@ -326,5 +344,25 @@ p{
 
 	.list-wrap{
 		width: 65%;
+	}
+
+	.classic{
+		width: 95%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.classic-list-wrap{
+		position: relative;
+	}
+
+	.title-wrap{
+		position:absolute;
+		color:#fff;
+		text-align: center;
+	}
+	.classic-icon path{
+		fill: #fff;
 	}
 }	
