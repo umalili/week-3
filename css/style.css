@@ -416,6 +416,7 @@ h6{
 
 .contact{
 	background: #AA06010D;
+	padding-bottom: 92px;
 }
 
 .contact h3{
@@ -432,7 +433,7 @@ h6{
 	max-width: 792px;
 }
 
-.contact-form input, .contact textarea{
+.contact-form input, .contact-form textarea{
 	padding: 14px 16px;
 	margin-bottom: 1rem;
 	line-height: 1.3;
@@ -471,6 +472,7 @@ h6{
 }
 
 .contact .input-group .tick::before {
+	margin: 0;
     width: 16px;
     height: 16px;
     border-radius: 0;
@@ -485,6 +487,7 @@ h6{
 }
 
 .contact .input-group .tick::after {
+	margin: 0;
 	width: 5px;
 	height: 10px;
 	border-radius: 0;
@@ -511,6 +514,37 @@ h6{
 	border: 0;
 	font-size: 16px;
 	border-radius: 0;
+}
+
+.footer li a{
+	color: #fff;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+.footer, .b_menu, .social-media{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer{
+	background: #AA0601;
+	padding-top: 48px;
+}
+
+.footer-menu{
+	margin-bottom: 1rem;
+}
+
+.footer_nav-btn{
+	padding: 1rem 1.5rem;
+	line-height: 1.5;
+}
+
+.social-media img{
+	width: 48px;
+	margin-left: auto;
 }
 
 @media(max-width:992px){
