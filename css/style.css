@@ -95,7 +95,6 @@ img {
     transition: width .5s;
 }
 
-
 .banner{
 	background-image:url("../img/68.png");
 	height: 840px;
@@ -104,7 +103,7 @@ img {
 }
 
 .container{
-	max-width: 1224px;
+	width: 1224px;
 	margin: 0 auto;
 	height: 100%;
 	padding: 0 12px;
@@ -522,16 +521,19 @@ h6{
 	margin-right: 5px;
 }
 
-.footer, .b_menu, .social-media{
+.footer{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.footer{
 	background: #AA0601;
 	padding-top: 48px;
 	padding-bottom: 20px;
+}
+
+.b_menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .footer ul{
@@ -545,21 +547,17 @@ h6{
 }
 
 .footer_nav-btn{
-	padding: 1rem 1.5rem;
+	padding: 1rem 1rem;
 	line-height: 1.5;
 }
 
-.social-media img{
-	width: 48px;
-	margin-left: auto;
+.media_fb img{
+	margin-left: 478px;
 }
 
-.footer-copyright{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
-	color: #fff;
+.media_fb img, .media_ig img{
+	width: 48px;
+	margin-right: 32px;
 }
 
 .footer-phone, .footer-mail{
@@ -581,10 +579,37 @@ h6{
 	margin-right: 23px;
 }
 
-.footer-copyright img{
-	width: 80px;
-	height: auto;
+.footer .copyright {
+    margin: 0;
 }
+
+.footer-logo {
+    margin-right: 2.375rem;
+}
+
+.footer .copyright_text {
+    line-height: 1.3125;
+	font-family: Roboto-Regular;
+	color: #fff;
+}
+
+.footer_menu {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mla {
+    margin-left: auto;
+}
+
+.footer .copyright .footer_nav-btn {
+    margin: 0;
+	font-family: 'PingFang TC Regular';
+}
+
+
 
 @media(max-width:992px){
 
