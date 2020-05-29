@@ -611,7 +611,9 @@ input[type="submit"]:hover {
 	font-family: 'PingFang TC Regular';
 }
 
-
+.c_t-white{
+	display: flex;
+}
 
 @media(max-width:992px){
 
