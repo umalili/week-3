@@ -828,7 +828,7 @@ input[type="submit"]:hover {
 	}
 	
 	.menu.active {
-		max-height: 252px;
+		max-height: 290px;
 	}
 	
 	.menu li a {
